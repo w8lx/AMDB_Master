@@ -1,7 +1,7 @@
 {
   "dataset": "FCC LMS AM pattern candidate export",
   "version": "0.8.0",
-  "generatedUtc": "2026-08-09T03:07:09Z",
+  "generatedUtc": "2026-08-09T11:22:48Z",
   "sourceFiles": [
     "facility.dat",
     "application_facility.dat",
@@ -10,7 +10,7 @@
     "app_am_tower.dat",
     "license_filing_version.dat"
   ],
-  "geometryRule": "explicit refTowerRecordId first; else towerRefSwitch==1 previous tower; origin only for first tower or unresolved geometry",
+  "geometryRule": "explicit refTowerRecordId first; else towerRefSwitch==1 previous tower; else zero-spacing tower origin; if no reference tower exists, spacing/orientation are absolute from an implicit omitted origin",
   "notes": "Fresh grouped AM antenna export with authorization supplied by a separately keyed sidecar generated in the same run.",
   "facilityCount": 14811,
   "patternCount": 51013,
