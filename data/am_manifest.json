@@ -1,7 +1,7 @@
 {
   "dataset": "FCC LMS AM pattern candidate export",
   "version": "0.8.0",
-  "generatedUtc": "2026-08-06T12:04:13Z",
+  "generatedUtc": "2026-08-09T03:07:09Z",
   "sourceFiles": [
     "facility.dat",
     "application_facility.dat",
@@ -10,25 +10,25 @@
     "app_am_tower.dat",
     "license_filing_version.dat"
   ],
-  "geometryRule": "explicit refTowerRecordId first; else towerRefSwitch==1 previous tower; else origin; first/zero-spacing tower at origin",
+  "geometryRule": "explicit refTowerRecordId first; else towerRefSwitch==1 previous tower; origin only for first tower or unresolved geometry",
   "notes": "Fresh grouped AM antenna export with authorization supplied by a separately keyed sidecar generated in the same run.",
   "facilityCount": 14811,
-  "patternCount": 51009,
+  "patternCount": 51013,
   "authorizationOverlay": {
     "file": "am_authorization_overlay.json",
     "schema": "w8lx-am-authorization-overlay-v3-candidate",
     "statistics": {
-      "groupedPatternCount": 51009,
-      "inScopeFacilityCount": 4312,
+      "groupedPatternCount": 51013,
+      "inScopeFacilityCount": 4307,
       "classCounts": {
-        "AMBIGUOUS": 472,
-        "CP": 319,
-        "HISTORICAL": 18188,
-        "LICENSE": 7497,
-        "OUT_OF_SCOPE": 24448,
+        "AMBIGUOUS": 473,
+        "CP": 313,
+        "HISTORICAL": 18185,
+        "LICENSE": 7489,
+        "OUT_OF_SCOPE": 24468,
         "STA": 85
       },
-      "ambiguousCount": 472
+      "ambiguousCount": 473
     }
   }
 }
